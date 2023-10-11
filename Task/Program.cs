@@ -10,5 +10,18 @@
 
 string[] array = {"Hello","2","world",":-)"};
 
+string MySortArray(string[] array)
+{
+    string[] resultArray = new string[0];
+    for(int i =0; i < array.Length;i++)
+        {
+            if (array[i].Length <= 3)
+            {
+                resultArray = resultArray.Append($"'{array[i]}'").ToArray();
+            }
+        }
+    return String.Join(", ",resultArray);
+}
+
 
 
