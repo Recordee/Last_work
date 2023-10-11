@@ -23,5 +23,5 @@ string MySortArray(string[] array)
     return String.Join(", ",resultArray);
 }
 
-
-
+string r = MySortArray(array);
+Console.WriteLine($"[{r}]");
